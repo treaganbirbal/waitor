@@ -24,4 +24,4 @@ script:
    provider: heroku
    app: waitor # see README
    api_key:
-     secure: YOUR-***ENCRYPTED***-API-KEY-HERE # see README
+     secure: 711e8595-250f-45c3-9d98-bd2bebe537b8
