@@ -68,8 +68,7 @@ const createApp = () => {
   app.use('/api', require('./api'))
 
   // static file-serving middleware
-  app.use(express.static(path.join(__dirname, '..', 'public')))
-
+  express.static(path_join(__dirname, '../client/build'))
   // any remaining requests with an extension (.js, .css, etc.) send 404
   app.use((req, res, next) => {
     if (path.extname(req.path).length) {
